@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gabarito', sans-serif;
+}
+
+.wrapper {
+    padding: 2rem 5rem;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.divider {
+    margin: 1em 0;
+}
+
+.logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo > h1 {
+    font-weight: 200;
+}
+
+.address {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3rem 0;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.left-list {
+    list-style: none;
+    line-height: 1.5em;
+}
+
+.blue {
+    color: rgb(57, 141, 244);
+}
+
+.right-list {
+    list-style-type: square;
+}
+
+.status {
+    padding: 1px .5em;
+    border: 1px solid rgb(137, 137, 10);
+    background-color: yellow;
+    color: #333;
+    border-radius: 50px;
+}
+
+table {
+    width: 100%;
+}
+
+tr {
+    text-align: center;
+}
+
+
+tr > th {
+    padding: 1rem 0;
+    margin: 0;
+    color: white;
+    background-color: rgb(28, 119, 231);
+}
+
+tr:nth-child(even) {
+    background-color: rgb(131, 186, 253);
+    color: white;
+    /* border: 1px solid rgb(131, 186, 253); */
+}
+
+td {
+    padding: 1rem 0;
+}
+
+.total {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.total-column {
+    list-style: none;
+    font-size: 28px;
+}
+
+.total-column > li {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.total-column > li > span:nth-child(1) {
+    color:  rgb(28, 119, 231);
+    font-weight: 600;
+}
+
+.payment{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.pay-btn{
+    outline: none;
+    color: white;
+    background: rgb(131, 186, 253);
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: all ease-in-out .2s;
+    text-transform: capitalize;
+}
+
+.pay-btn:hover {
+    color: white;
+    background:rgb(10, 78, 162);
+}
+
+.divider {
+    border: 1px solid rgb(194, 194, 194);
+}
+
+.print-btn{
+    outline: none;
+    color: rgb(12, 78, 159);
+    font-weight: 600;
+    background: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 1px solid rgb(131, 186, 253);
+    cursor: pointer;
+    transition: all ease-in-out .2s;
+    text-transform: capitalize;
+}
+
+.print-btn:hover {
+    color: white;
+    background:rgb(10, 78, 162);
+}
+
+
+@media only screen and (max-width: 600px) {
+    .wrapper {
+        padding: 2rem;
+    }
+
+    .total-column {
+        list-style: none;
+        font-size: 16px;
+    }
+    
+    .print-btn{
+        outline: none;
+        color: rgb(12, 78, 159);
+        font-weight: 600;
+        background: white;
+        font-size: 18px;
+        padding: 5px 10px;
+        border: 1px solid rgb(131, 186, 253);
+        cursor: pointer;
+        transition: all ease-in-out .2s;
+        text-transform: capitalize;
+    }
+    
+    .print-btn:hover {
+        color: white;
+        background:rgb(10, 78, 162);
+    }
+}
